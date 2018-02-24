@@ -6,27 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="css/bootstrap.css">
 
     <!-- Customize CSS -->
-    <link rel="stylesheet" href="css/customize.css">
+    <link rel="stylesheet" href="customize.css">
 
     <title>New Application</title>
   </head>
   <body>
 
     <!-- MAIN CODE -->
-    <div class="containter">
+
+    <div class="container-fluid">
+      <nav class="navbar navbar-light" style="background-color: #EEEEEC;">
+        <!-- Navbar content -->
+        <img class="logo" src="image/cam2logo4v2.png" alt="CAM2logo">
+      </nav>
+    </div>
+    <div class="container">
       <div class="row">
-        <div class="col-xs-12">
-          <h1>Create your new application</h1>
+        <div class="col-12">
+          <h1><b>Create your new application<b></h1>
+            <hr>
           <h4>Application information </h4>
           <form action="" method="">
+
+            <!-- input field for application name -->
             <div class="form-group">
-              <label for="email">Name*</label>    <!-- when user click input label, highlights the input box -->
-              <input type="email" class="form-control" id="email"/>   <!-- id declared here must be the same with the for="" in previous line -->
-              <p class="instruct"> testing </p>
+              <div class="col-5">
+                <div class="row">
+                  <label for="email">Name*</label>    <!-- when user click input label, highlights the input box -->
+                  <input type="email" class="form-control" id="email"/>   <!-- id declared here must be the same with the for="" in previous line -->
+                  <p class="instruct"><i>Your application name. <#characters> max characters </i></p>
+              </div>
+              </div>
             </div>
+
+            <!-- input field for application description -->
+            <div class="form-group">
+              <label for="description">Description*</label>    <!-- when user click input label, highlights the input box -->
+              <input type="text" class="form-control" id="description"/>   <!-- id declared here must be the same with the for="" in previous line -->
+              <p class="instruct"><i>Your application description. <#characters> min characters, <#characters> max characters <i></p>
+            </div>
+
+            <!-- input field for application public website -->
+            <div class="form-group">
+              <div class="col-5">
+                <div class="row">
+                  <label for="webName">Website*</label>    <!-- when user click input label, highlights the input box -->
+                  <input type="website" class="form-control" id="webName"/>   <!-- id declared here must be the same with the for="" in previous line -->
+                  <p class="instruct"><i>Your publicly accessible website/application home page </i></p>
+              </div>
+              </div>
+            </div>
+
+            <!-- input field for callback url -->
+            <div class="form-group">
+              <div class="col-5">
+                <div class="row">
+                  <label for="callbackURL">Callback URL</label>    <!-- when user click input label, highlights the input box -->
+                  <input type="website" class="form-control" id="callbackURL"/>   <!-- id declared here must be the same with the for="" in previous line -->
+                  <p class="instruct"><i>where should we return after a success authentication </i></p>
+              </div>
+              </div>
+            </div>
+
+            <!-- Developer agreement checkbox -->
+            <!-- input field for callback url -->
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="agreement">
+              <label class="custom-control-label" for="agreement"> I have read the terms & agreements </label>
+            </div>
+
+            <button type="button" class="btn btn-light btn-lg">  Next  </button>
           </form>
         </div>
       </div>

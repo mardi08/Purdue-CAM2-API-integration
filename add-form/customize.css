@@ -5,5 +5,12 @@
 p.instruct {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  color: red !important
+  color: grey;
+}
+
+img.logo{
+  position: relative;
+  left: 100px;
+  max-width: 4%;
+  max-height: 4%;
 }
