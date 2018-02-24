@@ -1,0 +1,9 @@
+/* Where customize CSS code in addition to
+ * bootstrap css
+ */
+
+p.instruct {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: red !important
+}
